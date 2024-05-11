@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: auto;
+  white-space: nowrap; /* Prevent wrapping to the next line */
+
+}
+
+@media screen and (max-width: 1300px) {
+  .body {
+    overflow-x: scroll; /* This will force the horizontal scrollbar to appear when the viewport width is less than or equal to 1300px */
+  }
+}
