@@ -1,0 +1,43 @@
+.contacts-div {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 45px;
+    background-color: #7FA2C7;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.contacts {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 45px;
+    color: white;
+    background-color: #0B4984;
+    flex-direction: row !important;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow-x: auto;
+}
+
+
+
+.contacts img {
+    border-radius: 45px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    margin-right: 20px;
+    background-color: #2A80CB;
+}
+
+.contacts h2, .contacts h1 {
+    margin: 0;
+}
+
+.tab {
+    margin-right: 50px;
+}

@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    height: 100vh; /* Set container to full height of viewport */
+    margin: 20px; /* Add margin to center the container */
+  }
+  
+  .left-div {
+    background-color: #2A80CB;
+    border-radius: 45px;
+    width: auto;
+    max-width: 100%;
+    margin: 20px;
+    min-width: 400px;
+    align-items: start;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: inline-flex;
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    z-index: 2; /* This line positions the div in front */
+  }
+  
+  .main-div {
+    position: relative; /* Add this line to position the div */
+    left: -100px; /* Add this line to push the div to the left */
+    top: 50px; /* Add this line to push the div down */
+    background-color: #7FA2C7;
+    max-width: 90%;
+    min-width: 1000px;
+    overflow-x: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 45px;
+    grid-column: 2;
+    height: calc(100% - 100px); /* Adjust this value to make the div smaller */
+  }
+  .label-column-vertical {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    padding-right: 10px;
+    height: 40px;
+    width: 150px;
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+
+  .input-column-vertical {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+
+  .checkbox-container-vertical {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    width: 250px;
+    flex-shrink: 0; /* Prevent shrinking */
+  }

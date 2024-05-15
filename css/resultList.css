@@ -1,0 +1,191 @@
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px;
+    padding: 0px auto;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+  }
+.wrap-res {
+    margin: 40px 80px 40px 40px;
+    background-color: #f0f0f0;
+    display: flex;
+    position: relative;
+    border-radius: 45px;
+    max-width: 850px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    flex-direction: row;
+  }
+
+.image-res {
+border-radius: 45px;
+width: 300px;
+height: auto;
+vertical-align: middle;
+
+
+}
+
+.controls-res {
+position: absolute;
+top: 0;
+left: 0;
+
+width: 100%;
+display: flex;
+height: 100%; 
+justify-content: space-between;
+align-items: center;
+opacity: 0;
+}
+
+.img-res {
+position: relative;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+border-radius: 45px;
+display: inline-block;
+overflow: hidden;
+box-sizing: border-box;
+}
+
+.wrap-res:hover .controls-res {
+opacity: 1 ;
+
+}
+.wrap-res:hover .controls-res .prevButton-res, 
+.wrap-res:hover .controls-res .nextButton-res {
+  background: rgba(0, 0, 0, 0.5);
+  
+}
+
+.prevButton-res, .nextButton-res {
+background: black;
+position: absolute;
+z-index: 5;
+border: none;
+color: white;
+font-weight: bold;
+cursor: pointer;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.prevButton-res {
+left: 0;
+}
+
+.nextButton-res {
+right: 0;
+}
+
+.prevButton-res:hover, .nextButton-res:hover {
+    background: rgba(0, 0, 0, 1) !important;
+}
+
+.car-details-res {
+margin: 0%;
+margin-left: 5px;
+font-weight: bold;
+
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+font-size: 30px;
+}
+
+
+.details-text{
+    margin-left: 15px;
+    font-weight: bold;
+    color: #808080;
+
+    font-size: 15px;
+    margin-bottom: 30px;
+    
+}
+
+.car-pricing-res {
+margin-top: 10px;
+margin-left: 5px;
+font-weight: bold;
+position: absolute;
+  bottom: 0;
+  right: 5px;
+
+color: #2A80CB;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+font-size: 25px;
+margin-bottom: 30px;
+}
+
+
+
+.wrap-empty-res {
+background-color: #f0f0f0;
+visibility: hidden;
+}
+
+.pagination-container {
+    
+    right: 20px;
+    bottom: 0px;
+    display: flex;
+  flex-wrap: wrap;
+  
+  margin-left : 20px;
+
+  }
+
+  .pagination-container button {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: none;
+    border: none;
+    font-size: 20px; 
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+
+  }
+
+  .pagination-container p{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px; 
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .pagination-container button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+.sort-div {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+
+.sort-div button {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+    text-decoration: none;
+  }
+  
+  .sort-div button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
