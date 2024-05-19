@@ -22,7 +22,7 @@
     const [sort, setSort] = useState('asc');
     const paginate = pageNumber => setCurrentPage(pageNumber);
     useEffect(() => {
-      
+      setCurrentPage(1);
       const searchData = JSON.parse(localStorage.getItem('searchParams'));
       const indexOfLastCar = currentPage * carsPerPage;
     const indexOfFirstCar = indexOfLastCar - carsPerPage;
